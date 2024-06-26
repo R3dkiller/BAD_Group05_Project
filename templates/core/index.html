@@ -38,6 +38,103 @@ Services offered: renting, selling, buying, consultation and way more."/>
   </div>
 </section>
 <br>
+<!--About the Assignment-->
+<!-- About the Website -->
+<section id="about-website" class="py-5">
+  <div class="container">
+    <h2>{{ _("About the Website") }}</h2>
+    <p>{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
+  </div>
+</section>
+
+<!-- About the Team -->
+<section id="about-team" class="py-5 bg-light">
+  <div class="container">
+    <h2>{{ _("About the Team") }}</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="{% static 'images/uresh.jpg' %}" alt="Uresh Fernando" class="img-fluid rounded-circle mb-3">
+        <h3>Uresh Fernando</h3>
+        <p>216032J</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="{% static 'images/shanuka.jpg' %}" alt="Shanuka Perera" class="img-fluid rounded-circle mb-3">
+        <h3>Shanuka Perera</h3>
+        <p>216108P</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="{% static 'images/nithula.jpg' %}" alt="Nithula Nandiv" class="img-fluid rounded-circle mb-3">
+        <h3>Nithula Nandiv</h3>
+        <p>214569K</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview of the Assignment Task -->
+<section id="assignment-overview" class="py-5">
+  <div class="container">
+    <h2>{{ _("Overview of the Assignment Task") }}</h2>
+    <p>{{ _("Real estate listings platform - An application for listing properties for sale or rent. Users can search for properties based on various criteria, view property details, and contact agents.") }}</p>
+  </div>
+</section>
+
+<!-- Grading Scheme -->
+<section id="grading-scheme" class="py-5 bg-light">
+  <div class="container">
+    <h2>{{ _("Grading Scheme") }}</h2>
+    <p>{{ _("This project will be graded based on the following criteria:") }}</p>
+    <ul>
+      <li>{{ _("Functionality") }}</li>
+      <li>{{ _("Visual look and feel") }}</li>
+      <li>{{ _("Code quality") }}</li>
+      <li>{{ _("GitHub repository") }}</li>
+      <li>{{ _("Group collaboration") }}</li>
+    </ul>
+    <p>{{ _("Check the attached evaluation rubric for more details.") }}</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>{{ _("Dimension") }}</th>
+          <th>{{ _("Excellent") }} (30 points)</th>
+          <th>{{ _("Good") }} (20 points)</th>
+          <th>{{ _("Satisfactory") }} (10 points)</th>
+          <th>{{ _("Unsatisfactory") }} (0 points)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ _("Functionality") }}</td>
+          <td>{% if functionality >= 30 %}✔{% endif %}</td>
+          <td>{% if functionality >= 20 and functionality < 30 %}✔{% endif %}</td>
+          <td>{% if functionality >= 10 and functionality < 20 %}✔{% endif %}</td>
+          <td>{% if functionality < 10 %}✔{% endif %}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Visual look and feel") }}</td>
+          <td>{% if visual_look_feel >= 30 %}✔{% endif %}</td>
+          <td>{% if visual_look_feel >= 20 and visual_look_feel < 30 %}✔{% endif %}</td>
+          <td>{% if visual_look_feel >= 10 and visual_look_feel < 20 %}✔{% endif %}</td>
+          <td>{% if visual_look_feel < 10 %}✔{% endif %}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Code Quality") }}</td>
+          <td>{% if code_quality >= 20 %}✔{% endif %}</td>
+          <td>{% if code_quality >= 14 and code_quality < 20 %}✔{% endif %}</td>
+          <td>{% if code_quality >= 8 and code_quality < 14 %}✔{% endif %}</td>
+          <td>{% if code_quality < 8 %}✔{% endif %}</td>
+        </tr>
+        <tr>
+          <td>{{ _("GitHub Repository") }}</td>
+          <td>{% if git_repo >= 20 %}✔{% endif %}</td>
+          <td>{% if git_repo >= 14 and git_repo < 20 %}✔{% endif %}</td>
+          <td>{% if git_repo >= 8 and git_repo < 14 %}✔{% endif %}</td>
+          <td>{% if git_repo < 8 %}✔{% endif %}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 <!-- Alerts -->
 {% include 'core/partials/_alerts.html' %}
 
