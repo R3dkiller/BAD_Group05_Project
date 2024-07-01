@@ -83,7 +83,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - [Your Company Name]</title>
+  <title>About Us - Siri Retailor</title>
   <style>
       body {
           font-family: Arial, sans-serif;
@@ -124,8 +124,13 @@
           color: #007bff;
           text-decoration: none;
       }
-      h2 {
+      h1 {
           color: #333;
+      h2 {
+          color: #e9ecef;
+      }
+      h5 {
+          color: #333;    
       }
       p {
           color: #333;
@@ -160,17 +165,23 @@
       </div>
       <section id="showcase">
         <div class="container text-center">
-          <div class="home-search p-5">
-            <div class="overlay round-corners p-2">
+          <div class="home-search p-0">
+            <div class="overlay round-corners p-0">
               <div class="row col-12 pl-0 ml-0 justify-content-center">
                 <div class="col-12 col-lg-8 p-0 text-center">
-                  <h1 class="display-4 font-weight-bold mb-3">
-                    <h2>About Us</h2>
-                    <p><h5> Welcome to <strong>Sri Realtors</strong>, your trusted partner in real estate. Established in <strong>1980</strong>, we have been committed to providing exceptional real estate services to our clients, helping them find their dream homes, investment properties, and commercial spaces.</h5></p>
-                    <h2>Our Mission</h2>
-                    <p>Our mission is to offer unparalleled real estate experiences by delivering top-notch services and fostering lasting relationships with our clients. We strive to understand your unique needs and provide tailored solutions that exceed expectations.</p>
-                     <h2>Our Vision</h2>
-                    <p>We envision a world where finding the perfect property is seamless and enjoyable. By leveraging our extensive market knowledge, innovative technology, and a client-centric approach, we aim to be the leading real estate agency in <strong>Colombo</strong>.</p>
+                  <h2 class="display-4 font-weight-bold mb-3">
+                    {{ _("About Us") }}
+                  </h2>
+                  <p class="lead mb-0">{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
+                  <section id="about-company" class="py-1 text-center">
+                    <div class="container">
+                      <h2>{{ _("Our Mission") }}</h2>
+                      <p>{{ _("Our mission is to offer unparalleled real estate experiences by delivering top-notch services and fostering lasting relationships with our clients. We strive to understand your unique needs and provide tailored solutions that exceed expectations.") }}</p>
+                      <h2>{{ _("Our Vision") }}</h2>
+                      <p>{{ _("We envision a world where finding the perfect property is seamless and enjoyable. By leveraging our extensive market knowledge, innovative technology, and a client-centric approach, we aim to be the leading real estate agency in Colombo.") }}</p>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
