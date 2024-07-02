@@ -5,22 +5,35 @@
 
 
 {% block content %}
-
-{% include 'core/partials/_showcase_section.html' %}
-<!-- Breadcrumb -->
-<section id="bc" class="mt-3">
-  <div class="container">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="{% url 'index' %}">
-            <i class="fas fa-home"></i>{{ _("Home") }} </a>
-        </li>
-        <li class="breadcrumb-item active">{{ _("About") }}</li>
-      </ol>
-    </nav>
+<section id="aboutus">
+    
+  <div class="home-search p-0">
+    <div class="container"></div>
+    <div class="container text-center"></div>
+      <div class="overlay round-corners p-5">
+        <div class="row col-12 pl-0 ml-0 justify-content-center">
+          <div class="col-12 col-lg-8 p-0 text-center">
+            <b><h2>
+              {{ _("About Us - Sri Realtors") }}
+            </h2></b>
+            <p class="lead mb-0">{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
+            <section id="about-company" class="py-1 text-center">
+              <hr width="80%" color="white">
+              <div class="container">
+                <b><h2>{{ _("Our Mission") }}</h2></b>
+                <p>{{ _("Our mission is to offer unparalleled real estate experiences by delivering top-notch services and fostering lasting relationships with our clients. We strive to understand your unique needs and provide tailored solutions that exceed expectations.") }}</p>
+                <hr width="80%" color="white">
+                <b><h2>{{ _("Our Vision") }}</h2></b>
+                <p>{{ _("We envision a world where finding the perfect property is seamless and enjoyable. By leveraging our extensive market knowledge, innovative technology, and a client-centric approach, we aim to be the leading real estate agency in Colombo.") }}</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<br>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,32 +41,7 @@
 </head>
 <body>
       
-<section id="showcase">
-    
-        <div class="home-search p-0">
-          <div class="container"></div>
-          <div class="container text-center"></div>
-            <div class="overlay round-corners p-5">
-              <div class="row col-12 pl-0 ml-0 justify-content-center">
-                <div class="col-12 col-lg-8 p-0 text-center">
-                  <h2 class="display-4 font-weight-bold mb-1">
-                    {{ _("About Us - Sri Realtors") }}
-                  </h2>
-                  <p class="lead mb-0">{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
-                  <section id="about-company" class="py-1 text-center">
-                    <div class="container">
-                      <h2>{{ _("Our Mission") }}</h2>
-                      <p>{{ _("Our mission is to offer unparalleled real estate experiences by delivering top-notch services and fostering lasting relationships with our clients. We strive to understand your unique needs and provide tailored solutions that exceed expectations.") }}</p>
-                      <h2>{{ _("Our Vision") }}</h2>
-                      <p>{{ _("We envision a world where finding the perfect property is seamless and enjoyable. By leveraging our extensive market knowledge, innovative technology, and a client-centric approach, we aim to be the leading real estate agency in Colombo.") }}</p>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <br>
 
 <br>
@@ -61,7 +49,7 @@
 
 {% if realtors %}
 <!-- Team -->
-<section id="team" class="py-5">
+<section id="tems" class="py-5">
   <div class="container">
     <h2 class="text-center pb-5">{{ _("Our Team") }}</h2>
     <div class="row text-center">
