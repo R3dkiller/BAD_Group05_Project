@@ -14,7 +14,7 @@ old green #09b48f
 
 img {
   width: 100%;
-  color: #09b48f;
+  color: #c3d6d2;
 }
 
 .logo {
@@ -232,7 +232,7 @@ background: #222b3460;
 }
 
 .primary {
-  color: #308661;
+  color: #308661; 
 }
 
 .footer {
@@ -415,7 +415,7 @@ background: #222b3460;
 }
 
 .team-box {
-  background-color: #343a40; /* Dark background for the team boxes */
+  background-color: #0a0a0a; /* Dark background for the team boxes */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
@@ -430,8 +430,8 @@ background: #222b3460;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin-bottom: 20px;
 }
 
