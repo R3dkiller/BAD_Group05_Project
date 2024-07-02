@@ -36,37 +36,6 @@
 
         </div>
       </div>
-
-
-      <div class="col-md-3">
-        <div class="text-right">
-          {% for language in languages %}
-
-          <a href="#{{ language.code }}" onclick="set_language('{{ language.code }}')" {% if classes.a_class != '' %}
-            class="{{ classes.a_class }}" {% endif %} title="{{ language.name_local }}">
-            <span class="flag-icon flag-icon-{{ language.code }} {{ icon_class }}"></span>
-          </a>
-          {% endfor %}
-
-          <form action="{% url 'set_language' %}" method="post" id="setlang">
-            {% csrf_token %}
-            <input name="next" type="hidden" value="{{ redirect_to }}">
-            <input type="hidden" name="language" id="language">
-          </form>
-
-          <script type="text/javascript">
-            if (window.location.hash) {
-              var hash = window.location.hash;
-              document.getElementById('language').value = hash.replace('#', '');
-              document.getElementById('setlang').submit()
-            }
-            function set_language(language) {
-              $('input[name="language"]').val(language);
-              $('form#setlang').submit();
-            }
-          </script>
-        </div>
-      </div>
     </div>
   </div>
 </section>
