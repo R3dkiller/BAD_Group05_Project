@@ -371,3 +371,58 @@ background: #222b3460;
 .smaller-text {
   font-size: 30px;
 }
+
+#team {
+  padding: 50px 0;
+  background-color: #6c757d; /* This is the Bootstrap bg-secondary color */
+  color: #ffffff; /* This is the Bootstrap text-white color */
+}
+
+#team h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.team-box {
+  background-color: #343a40; /* Dark background for the team boxes */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-box:hover {
+  transform: scale(1.05);
+}
+
+.team-photo {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#uresh-photo {
+  background-image: url('../img/uresh.png');
+}
+
+#shanuka-photo {
+  background-image: url('../img/shanuka.png');
+}
+
+#nithula-photo {
+  background-image: url('../img/nithula.png');
+}
+
+.team-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-box p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
