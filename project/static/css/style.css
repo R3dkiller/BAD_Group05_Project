@@ -93,7 +93,7 @@ img {
 }
 
 #services {
-  background: url(../img/building.jpg);
+  background: url('../img/building.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
