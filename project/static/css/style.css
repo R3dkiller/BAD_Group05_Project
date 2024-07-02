@@ -61,7 +61,7 @@ img {
 }
 
   #aboutus {
-    background: url('../img/night.jpg');
+    background: url('../img/night.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -430,21 +430,21 @@ background: #222b3460;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: auto;
+  height: auto;
   margin-bottom: 20px;
 }
 
 #uresh-photo {
-  background-image: url('/project/static/img/uresh.jpeg');
+  background-image: url('/project/static/img/uresh.png');
 }
 
 #shanuka-photo {
-  background-image: url('/project/static/img/shanuka.jpeg');
+  background-image: url('/project/static/img/shanuka.png');
 }
 
 #nithula-photo {
-  background-image: url('/project/static/img/nithula.jpeg');
+  background-image: url('/project/static/img/nithula.png');
 }
 
 .team-box h3 {
