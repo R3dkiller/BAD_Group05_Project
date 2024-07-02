@@ -75,11 +75,42 @@
   </div>
 </section>
 <!-- Work -->
-<section id="work" class="bg-dark text-white text-center">
-  <h2 class="display-4 pb-3">{{ _("We Work For You") }}</h2>
-
-  <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">{{ _("View Our Featured Listings") }}</a>
+<section id="work" class="bg-black text-white text-center modern-section">
+  <h2 class="display-4 pb-3">{{ _("BAD - Group 05") }}</h2>
+  <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg modern-btn">{{ _("View Our Featured Listings") }}</a>
 </section>
+
+<style>
+  .modern-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #121313, #000000);
+    text-align: center;
+  }
+
+  .modern-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .modern-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #d6c209;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .modern-btn:hover {
+    background-color: #434343;
+    color: #5a67d8;
+    box-shadow: 0 4px 15px rgba(90, 103, 216, 0.4);
+  }
+</style>
 
 {% endif %}
 
