@@ -430,21 +430,21 @@ background: #222b3460;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  width: auto;
-  height: auto;
+  width: 150px;
+  height: 150px;
   margin-bottom: 20px;
 }
 
 #uresh-photo {
-  background-image: url('/project/static/img/uresh.png');
+  background-image: url('../img/uresh.png');
 }
 
 #shanuka-photo {
-  background-image: url('/project/static/img/shanuka.png');
+  background-image: url('../img/shanuka.png');
 }
 
 #nithula-photo {
-  background-image: url('/project/static/img/nithula.png');
+  background-image: url('../img/nithula.png');
 }
 
 .team-box h3 {
