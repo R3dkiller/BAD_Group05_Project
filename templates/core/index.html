@@ -40,42 +40,109 @@ Services offered: renting, selling, buying, consultation and way more."/>
 <br>
 <!--About the Assignment-->
 <!-- About the Website -->
-<section id="about-website" class="py-5">
-  <div class="container">
-    <h2>{{ _("About the Website") }}</h2>
-    <p>{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
+<!-- Showcase -->
+<section id="showcase">
+  <div class="container text-center">
+    <div class="home-search p-5">
+      <div class="overlay round-corners p-2">
+        <div class="row col-12 pl-0 ml-0 justify-content-center">
+          <div class="col-12 col-lg-8 p-0 text-center">
+            <h1 class="display-4 font-weight-bold mb-3">
+              {{ _("About Us") }}
+            </h1>
+            <p class="lead mb-5">{{ _("Sri Realtors is a pioneer real estate listing website in Sri Lanka. A person can register and login to the website to list properties. There is also a separate Admin login for managing the site.") }}</p>
+            <section id="about-company" class="py-1 text-center">
+              <div class="container">
+                <h2>{{ _("Our Mission") }}</h2>
+                <p>{{ _("Our mission is to offer unparalleled real estate experiences by delivering top-notch services and fostering lasting relationships with our clients. We strive to understand your unique needs and provide tailored solutions that exceed expectations.") }}</p>
+                <h2>{{ _("Our Vision") }}</h2>
+                <p>{{ _("We envision a world where finding the perfect property is seamless and enjoyable. By leveraging our extensive market knowledge, innovative technology, and a client-centric approach, we aim to be the leading real estate agency in Colombo.") }}</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<br>
 
-<!-- About the Team -->
-<section id="about-team" class="py-5 bg-light">
+<!-- Our Services -->
+<section id="services" class="py-5 bg-secondary text-white">
   <div class="container">
-    <h2>{{ _("About the Team") }}</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="{% static 'images/uresh.jpg' %}" alt="Uresh Fernando" class="img-fluid rounded-circle mb-3">
-        <h3>Uresh Fernando</h3>
-        <p>216032J</p>
+    <h2 class="text-center">{{ _("Our Services") }}</h2>
+    <div class="row text-center justify-content-center">
+      <div class="col-12 col-md-3">
+        <div class="service-box p-4">
+          <h3>{{ _("Residential Sales and Rentals") }}</h3>
+          <p>{{ _("Whether you're looking to buy, sell, or rent, our experienced agents are here to guide you through the process easily.") }}</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="{% static 'images/shanuka.jpg' %}" alt="Shanuka Perera" class="img-fluid rounded-circle mb-3">
-        <h3>Shanuka Perera</h3>
-        <p>216108P</p>
+      <div class="col-12 col-md-3">
+        <div class="service-box p-4">
+          <h3>{{ _("Commercial Properties") }}</h3>
+          <p>{{ _("We specialize in finding the right commercial spaces that suit your business needs.") }}</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="{% static 'images/nithula.jpg' %}" alt="Nithula Nandiv" class="img-fluid rounded-circle mb-3">
-        <h3>Nithula Nandiv</h3>
-        <p>214569K</p>
+      <div class="col-12 col-md-3">
+        <div class="service-box p-4">
+          <h3>{{ _("Property Management") }}</h3>
+          <p>{{ _("Our comprehensive property management services ensure your investment is well-maintained and profitable.") }}</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="service-box p-4">
+          <h3>{{ _("Real Estate Consulting") }}</h3>
+          <p>{{ _("We advise on market trends, property values, and investment opportunities.") }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<!-- about the team -->
+<section id="services" class="py-5 bg-secondary text-white">
+  <div class="container">
+    <h2 class="text-center">{{ _("About the Team") }}</h2>
+    <div class="row text-center justify-content-center">
+      <div class="col-12 col-md-3">
+        <div class="team-box p-4">
+          <img src="{% static 'images/uresh.jpg' %}" alt="Uresh Fernando" class="img-fluid rounded-circle mb-3">
+          <h3>Uresh Fernando</h3>
+          <p>216032J</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="team-box p-4">
+          <img src="{% static 'images/shanuka.jpg' %}" alt="Shanuka Perera" class="img-fluid rounded-circle mb-3">
+          <h3>Shanuka Perera</h3>
+          <p>216092P</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="team-box p-4">
+          <img src="{% static 'images/nithula.jpg' %}" alt="Nithula Nandiv" class="img-fluid rounded-circle mb-3">
+          <h3>Nithula Nandiv</h3>
+          <p>216084T</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Overview of the Assignment Task -->
-<section id="assignment-overview" class="py-5">
+<section id="assignment-overview" class="py-5 text-center">
   <div class="container">
-    <h2>{{ _("Overview of the Assignment Task") }}</h2>
-    <p>{{ _("Real estate listings platform - An application for listing properties for sale or rent. Users can search for properties based on various criteria, view property details, and contact agents.") }}</p>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h2 class="font-weight-bold">
+          {{ _("Overview of the Assignment Task") }}
+        </h2>
+        <p class="lead">
+          {{ _("Platform for real estate listings: An application that allows you to list properties for sale or rent. Users can examine property details, get in touch with agents, and search for properties using a variety of parameters.") }}
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -172,8 +239,8 @@ Services offered: renting, selling, buying, consultation and way more."/>
         <hr>
         <h3>{{ _("Buying and Renting") }}</h3>
         <p>
-          {{ _("We take car of your property. We can support you through the whole selling or renting process.") }}
-          {{ _("We make sure that everything is being taken care of.") }}
+          {{ _("We look after your assets. We are able to assist you along the entire renting or selling procedure.") }}
+          {{ _("We ensure that everything is handled properly.") }}
         </p>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
@@ -181,14 +248,14 @@ Services offered: renting, selling, buying, consultation and way more."/>
         <hr>
         <h3>{{ _("Propery Management") }}</h3>
         <p>
-          {{ _("Property management is the overseeing of residential, commercial and/or industrial real estate, including apartments, detached houses, condominium units, and shopping centers") }}
+          {{ _("The supervision of residential, commercial, and/or industrial real estate, such as retail malls, apartments, detached homes, and condominiums, is known as property management.") }}
         </p>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
         <i class="fas fa-suitcase fa-4x mr-4"></i>
         <hr>
         <h3>{{ _("Renting & Selling") }}</h3>
-        <p>{{ _("Thinking about purchasing an investment property? Real estate has produced many of the world's wealthiest people, so there are plenty of reasons to think that it is a sound investment.") }}</p>
+        <p>{{ _("Are you considering buying an investment property? There are many reasons to believe that real estate is a wise investment, including the fact that it has generated many of the wealthiest people on the world.") }}</p>
       </div>
     </div>
   </div>
