@@ -14,7 +14,7 @@ old green #09b48f
 
 img {
   width: 100%;
-  color: #c3d6d2;
+  color: #0dac89;
 }
 
 .logo {
@@ -123,7 +123,7 @@ background: #222b3460;
 }
 
 #showcase-inner {
-  background: url('../img/building.jpg');
+  background: url('../img/building.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
