@@ -406,15 +406,15 @@ background: #222b3460;
 }
 
 #uresh-photo {
-  background-image: url('../img/uresh.png');
+  background-image: url('/project/static/img/uresh.jpeg');
 }
 
 #shanuka-photo {
-  background-image: url('../img/shanuka.png');
+  background-image: url('/project/static/img/shanuka.jpeg');
 }
 
 #nithula-photo {
-  background-image: url('../img/nithula.png');
+  background-image: url('/project/static/img/nithula.jpeg');
 }
 
 .team-box h3 {
