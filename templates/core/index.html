@@ -92,47 +92,51 @@ Services offered: renting, selling, buying, consultation and way more."/>
       <li>{{ _("Group collaboration") }}</li>
     </ul>
     <p>{{ _("Check the attached evaluation rubric for more details.") }}</p>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>{{ _("Dimension") }}</th>
-          <th>{{ _("Excellent") }} (30 points)</th>
-          <th>{{ _("Good") }} (20 points)</th>
-          <th>{{ _("Satisfactory") }} (10 points)</th>
-          <th>{{ _("Unsatisfactory") }} (0 points)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ _("Functionality") }}</td>
-          <td>{% if functionality >= 30 %}✔{% endif %}</td>
-          <td>{% if functionality >= 20 and functionality < 30 %}✔{% endif %}</td>
-          <td>{% if functionality >= 10 and functionality < 20 %}✔{% endif %}</td>
-          <td>{% if functionality < 10 %}✔{% endif %}</td>
-        </tr>
-        <tr>
-          <td>{{ _("Visual look and feel") }}</td>
-          <td>{% if visual_look_feel >= 30 %}✔{% endif %}</td>
-          <td>{% if visual_look_feel >= 20 and visual_look_feel < 30 %}✔{% endif %}</td>
-          <td>{% if visual_look_feel >= 10 and visual_look_feel < 20 %}✔{% endif %}</td>
-          <td>{% if visual_look_feel < 10 %}✔{% endif %}</td>
-        </tr>
-        <tr>
-          <td>{{ _("Code Quality") }}</td>
-          <td>{% if code_quality >= 20 %}✔{% endif %}</td>
-          <td>{% if code_quality >= 14 and code_quality < 20 %}✔{% endif %}</td>
-          <td>{% if code_quality >= 8 and code_quality < 14 %}✔{% endif %}</td>
-          <td>{% if code_quality < 8 %}✔{% endif %}</td>
-        </tr>
-        <tr>
-          <td>{{ _("GitHub Repository") }}</td>
-          <td>{% if git_repo >= 20 %}✔{% endif %}</td>
-          <td>{% if git_repo >= 14 and git_repo < 20 %}✔{% endif %}</td>
-          <td>{% if git_repo >= 8 and git_repo < 14 %}✔{% endif %}</td>
-          <td>{% if git_repo < 8 %}✔{% endif %}</td>
-        </tr>
-      </tbody>
-    </table>
+    <form method="post"?
+      {% csrf_token %}
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>{{ _("Dimension") }}</th>
+            <th>{{ _("Excellent") }} (30 points)</th>
+            <th>{{ _("Good") }} (20 points)</th>
+            <th>{{ _("Satisfactory") }} (10 points)</th>
+            <th>{{ _("Unsatisfactory") }} (0 points)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ _("Functionality") }}</td>
+            <td><input type="radio" name="functionality" value="30"></td>
+            <td><input type="radio" name="functionality" value="20"></td>
+            <td><input type="radio" name="functionality" value="10"></td>
+            <td><input type="radio" name="functionality" value="0"></td>
+          </tr>
+          <tr>
+            <td>{{ _("Visual look and feel") }}</td>
+            <td><input type="radio" name="visual_look_feel" value="30"></td>
+            <td><input type="radio" name="visual_look_feel" value="20"></td>
+            <td><input type="radio" name="visual_look_feel" value="10"></td>
+            <td><input type="radio" name="visual_look_feel" value="0"></td>
+          </tr>
+          <tr>
+            <td>{{ _("Code Quality") }}</td>
+            <td><input type="radio" name="code_quality" value="20"></td>
+            <td><input type="radio" name="code_quality" value="14"></td>
+            <td><input type="radio" name="code_quality" value="8"></td>
+            <td><input type="radio" name="code_quality" value="0"></td>
+          </tr>
+          <tr>
+            <td>{{ _("GitHub Repository") }}</td>
+            <td><input type="radio" name="git_repo" value="20"></td>
+            <td><input type="radio" name="git_repo" value="14"></td>
+            <td><input type="radio" name="git_repo" value="8"></td>
+            <td><input type="radio" name="git_repo" value="0"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit" class="btn btn-primary">{{ _("Submit Marks") }}</button>
+    </form>
   </div>
 </section>
 <!-- Alerts -->
